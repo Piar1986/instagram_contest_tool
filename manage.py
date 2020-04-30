@@ -54,6 +54,13 @@ def get_comments_with_friend_like_follow(follower_users, comments):
                 comments_with_friend_like_follow.append(comment)
     return comments_with_friend_like_follow
 
+
+def show_winners(winners):
+    for winner in winners:
+        winner_username = winner[1]
+        print(winner_username)
+
+
 if __name__ == '__main__':
     parser = create_parser()
     args = parser.parse_args()
@@ -82,5 +89,4 @@ if __name__ == '__main__':
     comments_with_friend_like_follow = get_comments_with_friend_like_follow(follower_users, comments_with_friend_like)
     
     winners = set(comments_with_friend_like_follow)
-    winners_usernames = [username for user_id, username in winners]
-    print(winners_usernames)
+    show_winners(winners)
