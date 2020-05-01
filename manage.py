@@ -14,7 +14,7 @@ def create_parser():
 
 def get_users_mentions(comment_text):
     # https://blog.jstassen.com/2016/03/code-regex-for-instagram-username-and-hashtags/
-    result = re.findall("(?:@)([A-Za-z0-9_](?:(?:[A-Za-z0-9_]|(?:\.(?!\.))){0,28}(?:[A-Za-z0-9_]))?)", comment_text)
+    result = re.findall(r'(?:@)([A-Za-z0-9_](?:(?:[A-Za-z0-9_]|(?:\.(?!\.))){0,28}(?:[A-Za-z0-9_]))?)', comment_text)
     return result
 
 
