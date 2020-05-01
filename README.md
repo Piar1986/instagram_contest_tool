@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ### Аргументы
 
 * `post_link` — ссылка на пост;
-* `post_author` — автор поста (`Instagram` логин).
+* `post_author` — автор поста (Instagram логин).
 
 Пример команды запуска: 
 
@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 В результате скрипт определит участников, выполнивших условия конкурса, напечатает их логины: 
 
-`['nata.sha2408', 'katya.pic4er', 'kristina_buhtina', '_polinaa_15', 'anna_averkina_n', 'maria34ork', 'tatisch_24']`
+![](https://github.com/Piar1986/instagram_contest_tool/raw/master/result_example.png)
 
 ### Цель проекта
 
