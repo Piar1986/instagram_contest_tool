@@ -22,10 +22,6 @@ def is_user_exist(username):
     return bot.get_user_id_from_username(username) is not None
 
 
-def get_username(user_id):
-    return bot.get_username_from_user_id(user_id)
-
-
 def get_comments_with_friend_users_ids(comments):
     comments_with_friend_users_ids = []
     for comment in comments:
@@ -41,7 +37,7 @@ def get_comments_with_friend_users_ids(comments):
 def show_winners_usernames(winners):
     print('Участники, выполнившие условия конкурса:')
     for winner in winners:
-        winner_username = get_username(winner)
+        winner_username = bot.get_username_from_user_id(winner)
         print(winner_username)
 
 
